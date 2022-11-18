@@ -1,0 +1,39 @@
+h1 {
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    max-width: 80%;
+}
+
+
+img {
+    min-width: 75%;
+    max-width: 76%;
+    padding: 10px;
+    display: block;
+}
+
+nav {
+    margin-top: 30px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    display: inline;
+    font-family: 'Nunito Sans', helvetica, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 10px 35px;
+    padding: 10px 0px;
+    font-size: 15px;
+}
