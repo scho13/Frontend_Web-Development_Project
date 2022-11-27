@@ -41,17 +41,20 @@ h1 {
   
 
 nav{
-	background-color: blanchedalmond;
+	background-color: navy;
     border-bottom: 2px solid black;
     padding: 10px 0 10px 10px;
     /*line-height: 35px;*/
     font-size: 18px;
 }
 
-nav li{
+.navigation_links{
     display: inline;
-    
-    color: navy;
+    color: white;
+}
+.nav_links a:hover {
+    color: white;
+    opacity: 50%;
 }
 
 header{
@@ -59,6 +62,20 @@ header{
     flex-direction: column;
     text-align: center;
     
+}
+
+.annarbor_main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("../images/homebackground.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 img {
