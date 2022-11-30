@@ -160,7 +160,7 @@ body {
 }
 
 .annarbor_main h2{
-    font-size: 235px;
+    font-size: 100px;
 }
 
 @supports (-webkit-text-stroke: 4px white) {
@@ -193,25 +193,20 @@ a:hover {
     border-radius: 5px;
 }
 
-/*
+
 .skip {
-    font-family: 'Nunito Sans', helvetica, sans-serif;
+    font-family: 'Inter', helvetica, sans-serif;
     text-transform: uppercase;
     text-decoration: underline;
+    text-align: center;
     font-size: 13px;
-    padding-left: 80px;
     position:relative;  
     right: 500px;
 }
 .skip:focus {
     position: static;
 }
-*/
 
-.skip{
-    position: absolute;
-    left: -500px;
-}
 
 nav {
     margin-top: 15px;
@@ -232,17 +227,16 @@ ul li {
 }
 
 #intro h2 {
-    font-size: 60px;
+    font-size: 30px;
     margin-top: 20px;
+    text-align:center;
 
 }
 
 #intro h3 {
     font-size: 30px;
-    margin-top: 20px;
-    margin-left: 170px;
-    margin-bottom: 20px;
-    
+    margin: 30px;
+    text-align: center;
 }
 
 #intro .umich {
@@ -273,7 +267,7 @@ h2 {
 hr {
     width: 75%; 
     margin: auto;
-    margin-bottom: 3%;
+    margin-bottom: 7%;
  }
 
  /*
@@ -285,6 +279,53 @@ hr {
     transform-style: preserve-3d;
 }
 */
+#about-us p{
+    font-size: 20px;
+}
+#space img{
+    align-self: center;
+    justify-self: center;
+    margin:auto;
+}
+
+footer{
+    border-top: 5px solid black;
+    margin-top: 30px;
+}
+
+footer-end{
+    text-align: center;
+}
+
+footer{
+    background-color: #72A1E5;
+}
+
+.food .image {
+    position:relative;
+}
+.food .image .description {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(166, 186, 198, 0.72);
+    color: black;
+    font-size: x-large;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+.food .image:hover .description {
+    visibility: visible;
+    opacity: 1;
+}
+
   
 @media screen and (prefers-reduced-motion: reduce) {
     #space {
@@ -331,6 +372,11 @@ hr {
 }
 
 @media screen and (min-width: 900px){
+
+    #intro h2{
+        font-size: 60px;
+    }
+
     ul {
         flex-direction: row;
         justify-content: center;
@@ -345,6 +391,7 @@ hr {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .food .image {
@@ -357,16 +404,26 @@ hr {
         padding: 5%;
         padding-left: 10%;
         padding-top: 0%;
+        align-self: center;
     }
 
     .food .image p {
         text-align: left;
         margin-right: 12%;
     }
-   
-    .activity .image {
+
+    .food .image h2 {
+        text-align: center;
+        align-self: center;
+        padding-right: 20px;
+
+    }
+
+    .activity{
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: stretch;
+        align-self: center;
     }
 
     .activity .image img {
@@ -377,11 +434,40 @@ hr {
         grid-column: 2/span 1;
         text-align: left;
         align-self: center;
-        margin-right: 30%;
+        padding-bottom: 20px;
+        
     }
+
+
+    .activity .image h2 {
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        padding: 10px;
+
+    }
+
+    #about-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+        
+    }
+
+    .annarbor_main h2{
+        font-size: 200px;
+    }
+    
+    
 }
 
 @media screen and (min-width: 1400px){
+
+    #intro h2{
+        font-size: 70px;
+    }
+
     ul {
         justify-content: right;
         padding-right: 20px;
@@ -398,6 +484,7 @@ hr {
     }
 
     .food .image {
+        position: relative;
         width: 45%;
         flex-direction: column;
         padding-top: 10px;
@@ -418,6 +505,8 @@ hr {
         width: 76%;
     }
 
+    
+
     .activity {
         grid-template-columns: auto auto;
     }
@@ -430,4 +519,16 @@ hr {
         text-align: justify;
         margin-left: 85px;
     }
+
+    #space img{
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+    }
+
+    .annarbor_main h2{
+        font-size: 235px;
+    }
+
+    
 }
